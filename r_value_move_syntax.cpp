@@ -78,6 +78,12 @@ MyClass return_by_value() {
   return object;
 }
 
+void case00() {
+  cout << "\ncase00" << endl;
+  auto a = MyClass();
+  a = return_by_value();
+}
+
 void case0() {
   cout << "\ncase0" << endl;
   auto a = return_by_value();
@@ -116,6 +122,7 @@ void case5() {
 
 int main(int argc, char const *argv[]) {
   case0();
+  case00();
   case1();
   case2();
   case3();
