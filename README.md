@@ -10,9 +10,15 @@ g++ -std=c++11 r_value_move_syntax.cpp
 ```
 
 ```zsh
-
 case0
 default constructor, acquire resource
+destructor
+release resource, size:111
+
+case00
+default constructor, acquire resource
+move assignment
+destructor
 destructor
 release resource, size:111
 
